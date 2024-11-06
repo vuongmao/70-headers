@@ -1,0 +1,174 @@
+:root {
+  --white-color: #ffffff;
+  --black-color: #111928;
+
+  --flare-color-0: #f12711;
+  --flare-color-100: #f5af19;
+
+  --wedding-day-blue-color-0: #40e0d0;
+  --weddibg-day-blue-color-50: #ff8c00;
+  --wedding-day-blue-color-100: #ff0080;
+
+  --jshin-color-0: #12c2e9;
+  --jshin-color-50: #c471ed;
+  --jshin-color-100: #f64f59;
+
+  --blue-skies-color-0: #56ccf2;
+  --blue-skies-color-100: #2f80ed;
+
+  --fodhpur-color-0: #9cecfb;
+  --fodhpur-color-50: #65c7f7;
+  --fodhpur-color-100: #0052d4;
+
+  --back-to-earth-color-0: #00c9ff;
+  --back-to-earth-color-100: #92fe9d;
+
+  --teal-love-0: #aaffa9;
+  --teal-love-100: #11ffbd;
+
+  --stripe-color-0: #1fa2ff;
+  --stripe-color-50: #12d8fa;
+  --stripe-color-100: #a6ffcb;
+
+  --lunada-color-0: #5433ff;
+  --lunada-color-50: #20bdff;
+  --lunada-color-100: #a5fecb;
+
+  --alihossein-color-0: #f7ff00;
+  --alihossein-color-100: #db36a4;
+
+  --sun-on-the-horizon-color-0: #fceabb;
+  --sun-on-the-horizon-color-100: #f8b500;
+
+  --sunkist-color-0: #f2994a;
+  --sunkist-color-100: #f2c94c;
+
+  --juicy-orange-color-0: #ff8008;
+  --juicy-orange-color-100: #ffc837;
+
+  --citrus-peel-color-0: #fdc830;
+  --citrus-peel-color-100: #f37335;
+
+  --pastel-orange-at-the-sun-color-0: #ffb347;
+  --pastel-orange-at-the-sun-color-100: #ffcc33;
+
+  --mango-color-0: #ffe259;
+  --mango-color-100: #ffa751;
+
+  --sunrise-color-0: #ff512f;
+  --sunrise-color-100: #f09819;
+
+  --soundcloud-color-0: #fe8c00;
+  --soundcloud-color-100: #f83600;
+
+  --dancetoforget-color-0: #ff4e50;
+  --dancetoforget-color-100: #f9d423;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: rgb(255, 128, 8);
+  background: linear-gradient(
+    90deg,
+    var(--juicy-orange-color-0) 0%,
+    var(--juicy-orange-color-100) 100%
+  );
+}
+
+.header1 {
+  background-color: var(--white-color);
+  margin: 10px 100px;
+  padding: 25px 36px;
+  border-radius: 10px;
+}
+
+.header-wrapper nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: var(--black-color);
+  cursor: pointer;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.logo-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo-text-above {
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.logo-text-below {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.login-wrapper {
+  display: flex;
+  gap: 10px;
+}
+
+.btn {
+  padding: 8px 26px;
+  color: var(--white-black);
+  min-width: 111px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 2px double transparent;
+  background-image: linear-gradient(var(--white-color), var(--white-color)),
+    radial-gradient(
+      circle at left top,
+      var(--soundcloud-color-0),
+      var(--soundcloud-color-100)
+    );
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+}
+
+.btn.fill {
+  border: none;
+  color: var(--white-color);
+  background: rgb(255, 128, 8);
+  background: linear-gradient(
+    90deg,
+    var(--mango-color-0) 0%,
+    var(--mango-color-100) 100%
+  );
+}
